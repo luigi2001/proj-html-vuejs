@@ -11,7 +11,7 @@
           <a href="#"><i class="fab fa-youtube me-3"></i></a>
       </span>
       <div class="logo m-3 text-center">
-          <img :src="require('../assets/avada-food-logo.png')" alt="logo avada food">
+          <a href="#"><img :src="require('../assets/avada-food-logo.png')" alt="logo avada food"></a>
       </div>
       <div class="nav mt-4">
           <ul>
@@ -34,7 +34,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 header{
     height: 250px;
  .link{
@@ -45,6 +45,10 @@ header{
         text-decoration: none;
         font-size: 13px;
         color: #525151d7;
+
+        &:hover{
+            color: #FC7523;
+        }
     }
  }
  .social{
