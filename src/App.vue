@@ -1,19 +1,21 @@
 <template>
   <div id="app">
     <Header/>
+    <Jambotrom/>
     <Footer/>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue';
-import Footer from './components/Footer.vue'
-
+import Footer from './components/Footer.vue';
+import Jambotrom from './components/Jambotrom.vue'
 export default {
   name: 'App',
   components: {
     Header,
-    Footer
+    Footer,
+    Jambotrom
   }
 }
 </script>
