@@ -9,12 +9,32 @@
           <h5>March 25, 2019</h5>
         </div>
     </div>
+    <div class="cardcontainer">
+        <div class="card container p-5 border-0 rounded-0">
+          <div class="row text-center">
+            <h3>FOODIE JOURNAL</h3>
+            <div class="col-4 mt-3" v-for="(item,index) in ArrayCard" :key="index">
+                <CardJambotrom :dettagli="item"/>
+            </div>
+          </div>
+        </div>
+    </div>
   </section>
 </template>
 
 <script>
+import CardJambotrom from '@/components/CardJambo.vue';
+import ArrayCard from '@/data/ArrayCardJumbo.js'
 export default {
-    name: 'Jambotrom'
+    name: 'Jambotrom',
+    components:{
+        CardJambotrom
+    },
+    data(){
+        return{
+            ArrayCard: ArrayCard
+        }
+    }
 }
 </script>
 
@@ -56,6 +76,15 @@ export default {
             left: 40%;
             bottom: 95%;
         }
+    }
+}
+.cardcontainer{
+    height: 600px;
+    .card{
+    position: absolute;
+    top: 800px;
+    left: 50%;
+    transform: translate(-50%);
     }
 }
 </style>

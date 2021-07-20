@@ -1,6 +1,7 @@
 <template>
-    <footer class="mt-5 container">
-        <div class="row">
+    <footer class="bg-white">
+        <section class="mt-5 container p-5">
+          <div class="row">
             <div class="logo col-3 border-end text-center">
               <a href="#"><img :src="require('@/assets/avada-food-logo-mob.png')" alt="logo ava food"></a>
                 <div class="social mt-5">
@@ -28,7 +29,8 @@
               <a href="#"><img class="mt-3" :src="require('@/assets/download-android.png')" alt="logo google play"></a>
               <a href="#"><img class="mt-3" :src="require('@/assets/download-app-store.png')" alt="logo app store"></a>
           </div>
-        </div>
+         </div>
+        </section>
     </footer>
 </template>
 
@@ -46,7 +48,7 @@ export default {
 
 <style lang="scss" scoped>
 footer{
-    height: 270px;
+    height: 350px;
     .logo{
         .social{
             a{
