@@ -1,9 +1,9 @@
 <template>
   <section>
       <img @mouseover="hover = true" @mouseleave="hover = false" :src="require(`@/assets/${dettagli.img}`)" :alt="dettagli.text">
-      <h4 class="mt-3">{{dettagli.text}}</h4>
-      <p>By <a href="#">admin</a>|March 25th, 2019</p>
-      <div class="hovereffect" v-if="hover">
+      <h4 class="mt-3 text-center">{{dettagli.text}}</h4>
+      <p class="text-center">By <a href="#">admin</a>|March 25th, 2019</p>
+      <div class="hovereffect text-center" v-if="hover">
           <i class="fas fa-link bg-white p-3 rounded-circle"></i>
           <h4>{{dettagli.text}}</h4>
       </div>
@@ -44,7 +44,8 @@ section{
         }
     }
     img{
-    width: 350px;
+    width: 100%;
+    height: 50%;
     }
     .hovereffect{
         font-size: 50px;

@@ -2,8 +2,11 @@
   <div id="app">
     <Header/>
     <Jambotrom/>
-    <SectionPopularRecipes/>
-    <SectionCulinaryCollection/>
+    <div class="container">
+      <SectionPopularRecipes/>
+      <SectionCulinaryCollection/>
+      <SectionFarmToTable/>
+    </div>
     <Footer/>
   </div>
 </template>
@@ -13,7 +16,8 @@ import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 import Jambotrom from './components/Jambotrom.vue';
 import SectionPopularRecipes from './components/SectionPopularRecipes.vue';
-import SectionCulinaryCollection from './components/SectionCulinaryCollection.vue'
+import SectionCulinaryCollection from './components/SectionCulinaryCollection.vue';
+import SectionFarmToTable from './components/SectionFarmToTable.vue'
 export default {
   name: 'App',
   components: {
@@ -21,7 +25,8 @@ export default {
     Footer,
     Jambotrom,
     SectionPopularRecipes,
-    SectionCulinaryCollection
+    SectionCulinaryCollection,
+    SectionFarmToTable
   }
 }
 </script>

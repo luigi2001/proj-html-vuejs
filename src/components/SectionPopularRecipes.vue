@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section>
       <h3 class="text-center">POPULAR RECIPES</h3>
       <p class="text-center">Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maximus lacus non nunc lacinia lobortis.</p>
       <div class="row mt-5">
