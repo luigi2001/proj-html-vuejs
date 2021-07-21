@@ -3,6 +3,7 @@
     <Header/>
     <Jambotrom/>
     <SectionPopularRecipes/>
+    <SectionCulinaryCollection/>
     <Footer/>
   </div>
 </template>
@@ -11,14 +12,16 @@
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 import Jambotrom from './components/Jambotrom.vue';
-import SectionPopularRecipes from './components/SectionPopularRecipes.vue'
+import SectionPopularRecipes from './components/SectionPopularRecipes.vue';
+import SectionCulinaryCollection from './components/SectionCulinaryCollection.vue'
 export default {
   name: 'App',
   components: {
     Header,
     Footer,
     Jambotrom,
-    SectionPopularRecipes
+    SectionPopularRecipes,
+    SectionCulinaryCollection
   }
 }
 </script>

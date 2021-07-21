@@ -25,7 +25,7 @@ section{
     position: relative;
 
     img{
-      width: 300px;
+      width: 100%;
     }
 
    .hover{
