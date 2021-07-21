@@ -2,6 +2,7 @@
   <div id="app">
     <Header/>
     <Jambotrom/>
+    <SectionPopularRecipes/>
     <Footer/>
   </div>
 </template>
@@ -9,13 +10,15 @@
 <script>
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
-import Jambotrom from './components/Jambotrom.vue'
+import Jambotrom from './components/Jambotrom.vue';
+import SectionPopularRecipes from './components/SectionPopularRecipes.vue'
 export default {
   name: 'App',
   components: {
     Header,
     Footer,
-    Jambotrom
+    Jambotrom,
+    SectionPopularRecipes
   }
 }
 </script>
