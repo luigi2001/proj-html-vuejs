@@ -24,24 +24,31 @@
                             <CardJambo :dettagli="item"/>
                         </div>
                     </div>
+                    <button class="p-2 text-dark border-0">Load More Posts</button>
                 </div>
             </div>
-            <div class="col-4"></div>
+            <div class="col-4">
+                <CardLaterale :dettagli="ArrayList"/>
+            </div>
         </div>
   </section>
 </template>
 
 <script>
 import CardJambo from '@/components/CardJambo.vue';
-import ArrayCardFarm from '@/data/ArrayCardFarm.js'
+import ArrayCardFarm from '@/data/ArrayCardFarm.js';
+import CardLaterale from '@/components/CardLaterale.vue';
+import ArrayList from '@/data/ArrayListLaterale.js'
 export default {
     name: 'SectionFarmToTable',
     components:{
-        CardJambo
+        CardJambo,
+        CardLaterale
     },
     data(){
         return{
             ArrayCardFarm: ArrayCardFarm,
+            ArrayList: ArrayList,
             hover: false
         }
     }
@@ -83,6 +90,11 @@ button{
                 color: #FC7523;
             }
         }
+    }
+}
+.row{
+    button{
+        background-color: #EDEDE7;
     }
 }
 .hover{
